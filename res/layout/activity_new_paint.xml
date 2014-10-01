@@ -1,0 +1,52 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:orientation="vertical" >
+
+        
+    <com.example.gpaint.DrawCanvas
+       android:layout_width="fill_parent"
+       android:layout_height="800px"
+       android:id="@+id/canvas" />
+    
+    <RadioGroup
+        android:id="@+id/radioMode"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" >
+ 
+        <RadioButton
+            android:id="@+id/radioNew"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:onClick="onCreateMode"
+            android:text="Create courve" 
+            android:checked="true" />
+ 
+        <RadioButton
+            android:id="@+id/radioEdit"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:onClick="onEditMode"
+            android:text="Edit courve" />
+ 
+    </RadioGroup>
+    
+     <Button
+            android:id="@+id/saveCourve"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical|center_horizontal"
+            android:onClick="onSaveCourve"
+            android:text="Save courve"
+            android:textSize="30px" />
+     
+      <Button
+            android:id="@+id/removeSelected"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical|center_horizontal"
+            android:onClick="onRemoveSelected"
+            android:text="Remove selected"
+            android:textSize="30px" />
+
+</LinearLayout>

@@ -1,0 +1,43 @@
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@drawable/bkg" >
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:orientation="vertical" >
+        
+        <ImageButton
+            android:layout_marginTop="100px"
+            android:id="@+id/new_paint"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical|center_horizontal"
+            android:onClick="onNewPaint"
+            android:background="@android:color/transparent"
+            android:src="@drawable/create_btn" />
+        
+        <ImageButton
+            android:layout_marginTop="100px"
+            android:id="@+id/edit_paint"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical|center_horizontal"
+            android:onClick="onEditRemovePaint"
+            android:background="@android:color/transparent"
+            android:src="@drawable/manage_btn" />
+        
+        <ImageButton
+            android:layout_marginTop="100px"
+            android:id="@+id/exit"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical|center_horizontal"
+            android:onClick="onExitApp"
+            android:background="@android:color/transparent"
+            android:src="@drawable/exit_btn" />
+        
+    </LinearLayout>
+
+</ScrollView>
